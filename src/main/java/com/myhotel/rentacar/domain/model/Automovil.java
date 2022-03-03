@@ -26,9 +26,6 @@ public class Automovil extends Vehiculo{
     @JoinColumn(name = "TIPO_ID", referencedColumnName = "ID")
     private AutomovilTipo tipo;
 
-//    @Column(name = "TIPO_ID")
-//    private Integer tipoId;
-
     @Column(name = "CANT_PUERTAS")
     private Integer cantPuertas;
 

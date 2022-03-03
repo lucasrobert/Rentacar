@@ -71,38 +71,4 @@ public class Servicio {
     @Column(name = "PRECIO")
     private BigDecimal precio;
 
-
-
-
-//    @JoinTable(
-//            name = "servicio_repuesto",
-//            joinColumns = @JoinColumn(name = "servicio_id", nullable = false),
-//            inverseJoinColumns = @JoinColumn(name="repuesto_id", nullable = false)
-//    )
-//    @ManyToMany(cascade = CascadeType.ALL)
-//    private List<Repuesto> repuestos;
-
-//    @OneToMany(
-//            mappedBy = "servicioId",
-//            cascade = CascadeType.ALL,
-//            orphanRemoval = true
-//    )
-//    private List<ServicioRepuesto> servicioRepuestos;
-//
-//    @JoinTable(
-//            name = "servicio_trabajo",
-//            joinColumns = @JoinColumn(name = "servicio_id", nullable = false),
-//            inverseJoinColumns = @JoinColumn(name="trabajo_id", nullable = false)
-//    )
-//    @ManyToMany(cascade = CascadeType.ALL)
-//    private List<Trabajo> trabajos;
-//
-//    @Transient
-//    private List<Repuesto> repuestos;
-//
-//    public List<Repuesto> getRepuestos() {
-//        return  servicioRepuestos != null ? servicioRepuestos.stream()
-//                    .map(servRep -> { return servRep.getRepuesto();})
-//                    .collect(Collectors.toCollection(ArrayList::new)) : new ArrayList<>();
-//    }
 }
