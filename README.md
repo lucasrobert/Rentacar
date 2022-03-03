@@ -89,7 +89,7 @@ Download: https://www.postman.com/downloads/
 Instalación: https://learning.postman.com/docs/getting-started/installation-and-updates/
 
 ## Instalación
-Clonar el repositorio: https://github.com/
+Clonar el repositorio: https://github.com/lucasrobert/Rentacar.git
 
 ## Build
 Mediante linea de comando hacemos un build del proyecto maven.
