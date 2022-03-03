@@ -33,6 +33,7 @@ src
                     └───service
 ```
 ## Stack Tecnológico
+
 * Java 11 JDK.
 * [Apache Maven](https://maven.apache.org/) 3.8.x en adelante.
 * [Spring boot](https://spring.io/projects/spring-boot) - Framework de java
@@ -45,7 +46,6 @@ src
 
 
 ## Prerequisitos
-
 
 ###MySQL Server 8.x
 Download: https://dev.mysql.com/downloads/mysql/
