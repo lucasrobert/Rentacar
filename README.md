@@ -88,7 +88,7 @@ Download: https://www.postman.com/downloads/
 
 Instalación: https://learning.postman.com/docs/getting-started/installation-and-updates/
 
-## Instalación
+## Install
 Clonar el repositorio: https://github.com/lucasrobert/Rentacar.git
 
 ## Build
