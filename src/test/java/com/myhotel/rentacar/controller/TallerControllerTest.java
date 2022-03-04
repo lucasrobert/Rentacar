@@ -66,7 +66,7 @@ class TallerControllerTest {
 
     @Test
     @DisplayName("GET v1/talleres/1 completado")
-    void testGetWidgetById() throws Exception {
+    void testGetTallerById() throws Exception {
         TallerDto tallerDto = TallerDto.builder().id(1).nombre("Taller Test1").build();
         when(service.get(1)).thenReturn(tallerDto);
 

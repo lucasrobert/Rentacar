@@ -68,10 +68,10 @@ public class TallerServiceTest {
         Taller taller = mapper.dtoToTaller(tallerDto);
         doReturn(Optional.of(taller)).when(repository).findById(1);
 
-        TallerDto returnedWidget = service.get(1);
+        TallerDto returnedTaller = service.get(1);
 
-        Assertions.assertNotNull(returnedWidget, "Taller no encontrado");
-        Assertions.assertTrue(new ReflectionEquals(tallerDto).matches(returnedWidget), "El taller encontrado no es igual al esperado");
+        Assertions.assertNotNull(returnedTaller, "Taller no encontrado");
+        Assertions.assertTrue(new ReflectionEquals(tallerDto).matches(returnedTaller), "El taller encontrado no es igual al esperado");
 
     }
 
@@ -98,8 +98,8 @@ public class TallerServiceTest {
         Page<Taller> page = new PageImpl<Taller>(Arrays.asList(taller1, taller2));
         doReturn(page).when(repository).findAll(pageable);
 
-        List<TallerDto> widgets = service.getAll(pageable);
+        List<TallerDto> tallers = service.getAll(pageable);
 
-        Assertions.assertEquals(2, widgets.size(), "Debe retornar 2 talleres");
+        Assertions.assertEquals(2, tallers.size(), "Debe retornar 2 talleres");
     }
 }
